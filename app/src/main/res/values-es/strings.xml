@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OC Coches</string>
+    <string name="car_price">¿Cuál es el precio de su coche?</string>
+    <string name="down_payment">¿Cuál es su pago inicial en efectivo?</string>
+    <string name="go_data_entry">Volver a la entrada de datos</string>
+    <string name="instruction">Ingrese la información de compra del coche.</string>
+    <string name="loan_summary">Su Préstamo Resumen</string>
+    <string name="loan_report_button_text">Informe del préstamo</string>
+    <string name="loan_term">Elige el plazo del préstamo</string>
+    <string name="report_line1">\n\t\t<b>Pago mensual:</b>\t</string>
+    <string name="report_line10">\n\n1. Información del préstamo se pone a disposición por OC Coches.</string>
+    <string name="report_line11">\n\n2. Se requiere una tasa de impuesto sobre las ventas del 8% en Costa Mesa.</string>
+    <string name="report_line12">\n\n3. Los vehículos son financiados a una tasa de interés anual del 9%.\n\n</string>
+    <string name="report_line2">"\n\tEngomada del coche del precio:\t  "</string>
+    <string name="report_line3">"\n\tVa a acabar: "</string>
+    <string name="report_line4">"\n\n\tPlazo del préstamo es "</string>
+    <string name="report_line5">"\n\tImpuesto Ahora:\t\t\t\t\t\t\t  "</string>
+    <string name="report_line6">"\n\tSu costo:\t\t\t\t\t\t\t\t\t"</string>
+    <string name="report_line7">"\n\tCantidad prestada: "</string>
+    <string name="report_line8">"\n\tCantidad de interés:\t\t  "</string>
+    <string name="report_line9">\n\n\NOTA:</string>
+    <string name="title_activity_main">Concesionario de coches</string>
+    <string name="years3">3 anos</string>
+    <string name="years4">4 anos</string>
+    <string name="years5">5 anos</string>
+</resources>

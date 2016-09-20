@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.orangecoastcollege.cs273.bnguyen336.occars.PurchaseActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/oc_cars_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/bone_white"
+        android:background="@color/steel_blue"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/car_price"
+        android:id="@+id/textView2"
+        android:textSize="12dp"
+        android:padding="5dp"
+        android:layout_alignBottom="@+id/carPriceEditText"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/carPriceEditText"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:textIsSelectable="false"
+        android:textSize="22dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="@android:color/transparent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carPriceTextView"
+        android:textSize="20dp"
+        android:layout_above="@+id/downPaymentEditText"
+        android:layout_alignLeft="@+id/carPriceEditText"
+        android:layout_alignStart="@+id/carPriceEditText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/down_payment"
+        android:id="@+id/textView3"
+        android:textSize="12dp"
+        android:layout_alignBottom="@+id/downPaymentEditText"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:padding="5dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/downPaymentEditText"
+        android:layout_below="@+id/carPriceEditText"
+        android:layout_alignRight="@+id/carPriceEditText"
+        android:layout_alignEnd="@+id/carPriceEditText"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:paddingLeft="12dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:textSize="22dp"
+        android:textColor="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/downPaymentTextView"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/downPaymentEditText"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/loanTermRadioGroup"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/steel_blue"
+        android:layout_below="@+id/downPaymentTextView"
+        android:layout_alignLeft="@+id/loanReportButton"
+        android:layout_alignStart="@+id/loanReportButton">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/years3"
+            android:id="@+id/threeYearsRadioButton"
+            android:checked="true"
+            android:textColor="@color/bone_white"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/years4"
+            android:id="@+id/fourYearsRadioButton"
+            android:checked="false"
+            android:textColor="@color/bone_white"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/years5"
+            android:id="@+id/fiveYearsRadioButton"
+            android:checked="false"
+            android:textColor="@color/bone_white"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loan_term"
+        android:id="@+id/textView4"
+        android:textSize="12dp"
+        android:layout_below="@+id/loanTermRadioGroup"
+        android:layout_alignLeft="@+id/loanReportButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loan_report_button_text"
+        android:id="@+id/loanReportButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:onClick="activateLoanReport"/>
+
+</RelativeLayout>
